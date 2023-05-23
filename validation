@@ -1,0 +1,30 @@
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var errorMessage = document.getElementById("error-message");
+  
+  // Reset error message
+  errorMessage.textContent = "";
+  
+  // Perform form validation checks
+  if (name === "") {
+    errorMessage.textContent = "Please enter your name";
+    return false;
+  }
+  
+  if (email === "") {
+    errorMessage.textContent = "Please enter your email";
+    return false;
+  }
+  
+  if (password === "") {
+    errorMessage.textContent = "Please enter your password";
+    return false;
+  }
+  
+  // Add additional validation checks if needed
+  
+  return true;
+}
+
