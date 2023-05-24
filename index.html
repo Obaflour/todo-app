@@ -20,6 +20,27 @@
     
     <button type="submit">Register</button>
   </form>
+  <div id="task-list">
+  <h2>Task List</h2>
+  <ul id="tasks">
+    <!-- Tasks will be dynamically added here -->
+  </ul>
+</div>
+<form id="task-form">
+  <h3>Create Task</h3>
+  <div>
+    <label for="task-name">Task Name:</label>
+    <input type="text" id="task-name" required>
+  </div>
+  <div>
+    <label for="task-description">Task Description:</label>
+    <textarea id="task-description" required></textarea>
+  </div>
+  <div>
+    <button type="submit">Create Task</button>
+  </div>
+</form>
+<ul id="task-list"></ul>
   <div id="error-message"></div>
   <script src="script.js"></script>
 </body>

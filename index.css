@@ -37,9 +37,70 @@ input[type="password"] {
   border-radius: 5px;
   margin-bottom: 10px;
 }
+#task-list {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#task-list h2 {
+  color: #333;
+}
+
+#tasks {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  margin-bottom: 10px;
+}
+
+.task-item .task-name {
+  font-weight: bold;
+}
+
+.task-item .task-description {
+  color: #888;
+}
+
 
 .error-message {
   color: #ff0000;
 }
 
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.task-item .task-name {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.task-item .task-description {
+  margin-right: 10px;
+}
+
+.task-item .status-btn {
+  margin-left: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.task-item.completed {
+  background-color: #e0e0e0;
+}
+
+.task-item.completed .status-btn {
+  background-color: #4caf50;
+}
 
